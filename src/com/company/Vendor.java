@@ -71,26 +71,27 @@ public class Vendor
      * change) and returns false.
      * @return true for a successful sale, false otherwise (boolean)
      */
-  public boolean makeSale()
-    {
-    if(stock > 0 && deposit >= price) {
-      stock = stock - 1;
-      deposit = deposit - price;
-      return true;
-    }
-    else{
+  public boolean makeSale() {
+      if (stock > 0 && deposit >= price) {
+          stock = stock - 1;
+          change = deposit - price;
+          return true;
+      } else {
+          deposit = deposit + change;
+          return false;
 
-      return false;
-
-    }
+      }
+  }
 
     /**
      * Returns and zeroes out the amount of change (from
      * the last sale or refund).
      * @return number of cents in the current change (int)
      */
-//  ... getChange ...
-//    {
-//    ...
-//    }
+    public int getChange()
+    {
+       int a = change;
+       a = 0;
+       return a;
+    }
 }
