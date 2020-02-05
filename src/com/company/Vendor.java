@@ -6,6 +6,7 @@ public class Vendor
     private int price;
     private int stock;
   private int deposit;
+  private int change;
 
 
 
@@ -19,6 +20,7 @@ public class Vendor
             price = a;
             stock = b;
             deposit = 0;
+            change = 0;
 
     }
 
@@ -77,7 +79,9 @@ public class Vendor
       return true;
     }
     else{
-      
+
+      return false;
+
     }
 
     /**
