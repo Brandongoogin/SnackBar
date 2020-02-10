@@ -1,15 +1,25 @@
 package com.company;
 
 public class Complex {
+    double first;
+    double second;
     public Complex(double a) {
+        first = a;
+        second = 0.0;
 
     }
 
-    public Complex(double b) {
+    public Complex(double a, double b) {
+        first = a;
+        second = b;
 
     }
 
-    public int abs() {
-
+    public double abs(double a, double b) {
+        double ans = Math.sqrt(first * first + second * second);
+        return ans;
+    }
+    public Complex add(Complex other) {
+        double
     }
 }
