@@ -26,7 +26,7 @@ public class SoccerTeam {
             other.wins++;
         }
         games++;
-        goals = myScore + otherScore;
+        goals += myScore + otherScore;
     }
     public int currPoints(){
         int points = (3 * wins) + (ties);
@@ -63,7 +63,7 @@ public class SoccerTeam {
         System.out.println("Team 1 scored " + t1.currPoints() + " points");
         System.out.println("Team 2 scored " + t2.currPoints() + " points");
         System.out.println("Team 3 scored " + t3.currPoints() + " points");
-        System.out.println("Team 4 socred " + t4.currPoints() + " points");
+        System.out.println("Team 4 scored " + t4.currPoints() + " points");
 
         startTournament();		//new tournament
         t1.reset();
