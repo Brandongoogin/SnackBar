@@ -31,16 +31,16 @@ public class PasswordGenerator {
     public static void main(String[] args){
         PasswordGenerator pw1 = new
                 PasswordGenerator(4, "chs");
-        pw1.pwCount();
-        pw1.pwGen();
-        pw1.pwGen();
-        pw1.pwCount();
+       System.out.println (pw1.pwCount());
+        System.out.println(pw1.pwGen());
+        System.out.println(pw1.pwGen());
+        System.out.println (pw1.pwCount());
         PasswordGenerator pw2 = new
                 PasswordGenerator(6);
-        pw2.pwCount();
-        pw2.pwGen();
-        pw2.pwCount();
-        pw1.pwCount();
+        System.out.println (pw2.pwCount());
+        System.out.println (pw2.pwGen());
+        System.out.println (pw2.pwCount());
+        System.out.println (pw1.pwCount());
 
 
 
